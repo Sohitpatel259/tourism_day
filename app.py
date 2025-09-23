@@ -614,7 +614,7 @@ def create_webpage_and_qr_code():
         return
 
     # 2. Get the absolute path to the HTML file and format it as a file URI
-    public_url = "https://sohitpatel259.github.io/tourism_day/index.html"
+    public_url = "https://sohitpatel259.github.io/tourism_day/"
     print(f"🔗 Webpage URI: {public_url}")
 
     # 3. Generate the QR code
