@@ -625,7 +625,7 @@ def create_webpage_and_qr_code():
             box_size=10,
             border=4,
         )
-        qr.add_data(file_uri)
+        qr.add_data(public_url)
         qr.make(fit=True)
 
         img = qr.make_image(fill_color="black", back_color="white")
