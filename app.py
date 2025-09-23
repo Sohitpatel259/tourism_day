@@ -601,7 +601,7 @@ def create_webpage_and_qr_code():
     """
     Saves the HTML content to a file and generates a QR code pointing to it.
     """
-    html_filename = "famous_mexicans_final_quiz.html"
+    html_filename = "index.html"
     qr_code_filename = "webpage_final_quiz_qr.png"
 
     # 1. Write the HTML content to a file
@@ -614,9 +614,8 @@ def create_webpage_and_qr_code():
         return
 
     # 2. Get the absolute path to the HTML file and format it as a file URI
-    file_path = os.path.abspath(html_filename)
-    file_uri = pathlib.Path(file_path).as_uri()
-    print(f"🔗 Webpage URI: {file_uri}")
+    public_url = "https://sohitpatel259.github.io/tourism_day/index.html"
+    print(f"🔗 Webpage URI: {public_url}")
 
     # 3. Generate the QR code
     try:
